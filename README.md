@@ -21,7 +21,11 @@ Mostly done. Need to test in ASPARTIX.
 
 ### Part 3: QuAD
 
-Not started yet.
+Done and Complete.
+
+ * Do some trail stuff
+ 
+But the code works for examples listed in the folder.
 
 ### Part 4: ABA
 
