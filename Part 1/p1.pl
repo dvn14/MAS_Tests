@@ -17,7 +17,3 @@ grounded(X) :-
 	attacks(Y,X),
 	attacks(Z,Y),
 	grounded(Z),!.
-
-%checks_for_self_attacks_grounded_none
-argument(a).
-attacks(a,a).

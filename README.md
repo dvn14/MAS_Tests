@@ -14,7 +14,10 @@ Successfully tested in/for:
  
 ### Part 2: Argument Mining
 
-Not started yet.
+Mostly done. Need to test in ASPARTIX. 
+
+ * Double check the supports(a16,a17). It could be an attack.
+ * There should be a support from a4 to a0 ?
 
 ### Part 3: QuAD
 
