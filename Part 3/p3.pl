@@ -1,3 +1,10 @@
+%add below the definition of strength/2
+%(i.e. your answer to Part 3) 
+% do not include any examples
+
+:- dynamic(supports/2).
+:- dynamic(attacks/2).
+
 supporters(I,S) :- findall(X,supports(X,I),S).
 attackers(I,A) 	:- findall(X,attacks(X,I),A).
     
@@ -59,4 +66,4 @@ calc_strength(I,Val) :-
 strength(I,X) :-
 	argument(I),
 	calc_strength(I,Y),
-	X =:= Y.
+	X == Y.
