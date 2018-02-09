@@ -59,7 +59,7 @@ argument((C,X)) :-
     all_arguments(All),
     member((C,X),All).
 
-attack((C1,X1),(C2,X2)) :- !,
+attacks((C1,X1),(C2,X2)) :- !,
     all_arguments(All),
     contrary(A,C1),
     get_set(1,C1,All,[],Set1),
