@@ -40,15 +40,16 @@ all_arguments(All) :-
 	add_nullsupports(N,All1,All2),
     add_other(1,All2,All).
 
-%get_set(_,[],S,S) :- !.
-%get_set(C,[(C,A)|T],S,SF) :- !,	%list of supports
-%    append(S,[(C,A)],S1),
-%    get_set(C,T,S1,SF).
-%get_set(A,[(C,A)|T],S,SF) :- !, %list of claims
-%    append(S,[(C,A)],S1),
-%    get_set(A,T,S1,SF).
-%get_set(C,[_|T],S,SF) :-
-%    get_set(C,T,S,SF).
+get_set(_,_,[],S,S) :- !.
+get_set(1,C,[(C,A)|T],S,SF) :-	!,%list of supports
+    append(S,[(C,A)],S1),
+    get_set(1,C,T,S1,SF).
+get_set(2,A,[(C,X)|T],S,SF) :-   %list of claims
+    member(A,X), !,
+    append(S,[(C,X)],S1),
+    get_set(2,A,T,S1,SF).
+get_set(X,C,[_|T],S,SF) :-
+    get_set(X,C,T,S,SF).
 
 %get_all(C,Set) :-
 %    all_arguments(All),
@@ -57,6 +58,15 @@ all_arguments(All) :-
 argument((C,X)) :-
     all_arguments(All),
     member((C,X),All).
+
+attack((C1,X1),(C2,X2)) :- !,
+    all_arguments(All),
+    contrary(A,C1),
+    get_set(1,C1,All,[],Set1),
+    get_set(2,A,All,[],Set2),
+    member((C1,X1),Set1),
+    member((C2,X2),Set2).
+
 
 %Test_1
 myAsm(a).
