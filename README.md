@@ -31,13 +31,17 @@ But the code works for examples listed in the folder.
 
 ### Part 4i ABA Arguments
 
-Done. Complete I think.
+Done.
 
-### Part 4ii ABA Arguments
+WRONG output for invalid inputs.
 
-Not started yet.
+### Part 4ii ABA Attacks
 
-### Part 4iii ABA Arguments
+Done.
+
+WRONG output for invalid inputs.
+
+### Part 4iii ABA Write Up
 
 #### 4iii(a)
 
