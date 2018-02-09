@@ -40,23 +40,38 @@ all_arguments(All) :-
 	add_nullsupports(N,All1,All2),
     add_other(1,All2,All).
 
-get_set(_,[],S,S) :- !.
-get_set(C,[(C,[])|T],S,SF) :-
-    append(S,[[]],S1), !,
-    get_set(C,T,S1,SF).
-get_set(C,[(C,A)|T],S,SF) :-
-    append(S,[A],S1), !,
-    get_set(C,T,S1,SF).
-get_set(C,[_|T],S,SF) :-
-    get_set(C,T,S,SF).
+%get_set(_,[],S,S) :- !.
+%get_set(C,[(C,A)|T],S,SF) :- !,	%list of supports
+%    append(S,[(C,A)],S1),
+%    get_set(C,T,S1,SF).
+%get_set(A,[(C,A)|T],S,SF) :- !, %list of claims
+%    append(S,[(C,A)],S1),
+%    get_set(A,T,S1,SF).
+%get_set(C,[_|T],S,SF) :-
+%    get_set(C,T,S,SF).
 
-arguments_of_claim(C,Set) :-
-    all_arguments(All),
-    get_set(C,All,[],Set).
+%get_all(C,Set) :-
+%    all_arguments(All),
+%    get_set(C,All,[],Set).
 
 argument((C,X)) :-
-    arguments_of_claim(C,Set),
-    member(X,Set), !.
+    all_arguments(All),
+    member((C,X),All).
 
-argument((C,Set)) :-
-    arguments_of_claim(C,Set).
+%Test_1
+myAsm(a).
+myAsm(b).
+contrary(a,p).
+myRule(p,[b]).
+myRule(p,[]).
+
+%Test_2
+%myAsm(a).
+%myAsm(b).
+%myAsm(c).
+%contrary(a,r).
+%contrary(b,s).
+%contrary(c,t).
+%myRule(p,[q,a]).
+%myRule(q,[]).
+%myRule(r,[b,c]).
