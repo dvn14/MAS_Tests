@@ -13,6 +13,5 @@ contrary(a,r).
 contrary(b,s).
 contrary(c,t).
 myRule(p,[q,a]).
-myRule(p,[]).
 myRule(q,[]).
 myRule(r,[b,c]).
