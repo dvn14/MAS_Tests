@@ -1,5 +1,11 @@
+%Test_2
 myAsm(a).
 myAsm(b).
-contrary(a,p).
-myRule(p,[b]).
-myRule(p,[]).
+myAsm(c).
+contrary(a,r).
+contrary(b,s).
+contrary(c,t).
+myRule(p,[q,a,d]).
+myRule(q,[]).
+myRule(r,[b,c]).
+myRule(d,[]).
