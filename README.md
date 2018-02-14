@@ -4,7 +4,7 @@ Each file has the seperate parts for the Multi-Agent Systems Coursework.
 
 ## Part 1: AA
 
-Almost done I think.
+Almost done.
 Successfully tested in/for:
  * Self attacks
  * Attacks against each other
@@ -31,25 +31,21 @@ But the code works for examples listed in the folder.
 
 ### Part 4i ABA Arguments
 
-Done.
-
-WRONG output for invalid inputs.
+Done. I think.
 
 ### Part 4ii ABA Attacks
 
-Done.
-
-WRONG output for invalid inputs.
+Done. I think.
 
 ### Part 4iii ABA Write Up
 
 #### 4iii(a)
 
-Not started yet.
+Done.
 
 #### 4iii(b)
 
-Not started yet.
+Done.
 
 
 Property of Devin Nanayakkara.
