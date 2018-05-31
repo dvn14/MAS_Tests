@@ -31,11 +31,11 @@ But the code works for examples listed in the folder.
 
 ### Part 4i ABA Arguments
 
-Done. I think.
+Done.
 
 ### Part 4ii ABA Attacks
 
-Done. I think.
+Done.
 
 ### Part 4iii ABA Write Up
 
