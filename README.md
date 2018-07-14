@@ -46,6 +46,3 @@ Done.
 #### 4iii(b)
 
 Done.
-
-
-Property of Devin Nanayakkara.
